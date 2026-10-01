@@ -10,5 +10,5 @@ Open the folder in IntelliJ and press the green button, or run.ps1 on Windows an
 
 ## What I learned 
 
-I learned how to use IntelliJ, combined with GitHub, and how to be creative in programming: since Karel has mo turnRight(), I built one using three turnLeft() commands. 
+I learned how to use IntelliJ, combined with GitHub, and how to be creative in programming: since Karel has no turnRight(), I built one using three turnLeft() commands. 
 
