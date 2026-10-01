@@ -1,4 +1,4 @@
-# karel-starter
+# Karel the Robot
 
 This folder holds a robot. You are going to spend four weeks with it.
 
