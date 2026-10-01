@@ -23,18 +23,28 @@ import stanford.karel.*;
 public class MyKarel extends Karel {
 
     public void run() {
-
-        // Right now Karel takes two steps and stops. Run it and watch.
         move();
-        move();
+        doubleTheBeepers();
+    }
 
-        // YOUR TASK: get Karel to the beeper and pick it up.
-        //
-        // The beeper is two squares east and one square north of where Karel starts.
-        //
-        // Three more lines will do it. Add them below.
+    public void doubleTheBeepers() {
+        putDoubleBeeperOnNextDoor();
+        // moveBeeperOnNextDoorBack();
+    }   
+    private void putDoubleBeeperOnNextDoor() {
+        while (beepersPresent()){ 
+            pickBeeper();
+            move(); 
+            putBeeper();
+            putBeeper(); 
+            turnAround();
+            move(); 
+            turnAround();
+        }
+    }
+
+    private void turnAround() { 
         turnLeft();
-        move();
-        pickBeeper();
+        turnLeft();
     }
 }
